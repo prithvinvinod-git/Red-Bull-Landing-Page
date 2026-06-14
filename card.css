@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+/* .body::before{
+    content: "";
+    position: absolute;
+    left: -190;
+    width: 50px;
+    height:600px;
+    background:linear-gradient(to right,#E5E9FD 30%,rgba(255, 255, 255, 0) );
+    filter: blur(13px);
+    z-index: 9;
+
+}
+.body::after{
+    content: "";
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 50px;
+    height:470px;
+    background:linear-gradient(to left,#E5E9FD 30%,rgba(255, 255, 255, 0) );
+    filter: blur(13px);
+    z-index: 9;
+
+} */
+ .card-wrapper .swiper-pagination{
+    padding: 10px 0;
+    border-radius: 16px;
+    border: none;background: white;
+    
+ }
+ .card-wrapper .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background: #5772f0;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+ }
+  .card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+  }
+  .card-list .card-item .card-link:active{
+    cursor: -webkit-grabbing;
+    
+  }
+.card-list .card-item {
+    list-style: none;
+    transition: 0.5s ease;
+
+    
+}
+.swiper-slide-button{
+        background-color: #d3d1f72a;
+    padding: 40px 25px;
+        transition: 0.3s ease-in-out;
+        border-radius: 20px;
+
+}
+.swiper-slide-button:hover{
+    background-color: #ffffff;
+    color: #2d54ff;
+
+}
+.card-item:hover{
+    scale: 1.05;
+}
+.card-list .card-item .card-link{
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    background-color: #ffffff1f;
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease-in-out;
+}
+.card-list .card-item .card-link.sugar-free:hover{
+    background-color: #00a1ce59;
+}
+
+.card-list .card-item .card-link.energy-edition:hover{
+    background-color: #0f1b9d4b;
+}
+
+.card-list .card-item .card-link.red-edition:hover{
+    background-color: #ff00005f;
+}
+
+.card-list .card-item .card-link.yellow-edition:hover{
+    background-color: #ffcc0058;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #ffffff;
+    
+}
+.card-list  .card-link .card-image{
+    width: 60%;
+    height: 100%;
+    
+    /* aspect-ratio: 9/16; */
+    /* object-fit: cover; */
+    border-radius: 10px;
+}
+.card-list  .card-link .badge{
+    background-color: #dde4ff;
+    color: #5772f0;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    margin: 16px 0 18px;
+    font-weight: 500;
+    width: fit-content;
+    border-radius: 50px;
+
+}
+.swiper-slide{
+    
+}
+.card-list  .card-link .badge.developer{
+    background-color: #d1e7ff;
+    color: #fd0d0d;
+}
+
+.card-list  .card-link .badge.gamer{
+    background-color: #c7fbff;
+    color: #00a1ce;
+}
+.card-list  .card-link .badge.designer{
+    background-color: #d3d1f7;
+    color: #0f1b9d;
+}
+.card-list  .card-link .badge.editor{
+    background-color: #ffffff;
+    color: #ffcc00;
+}
+/* .card-list  .card-link .badge.marketer{
+    background-color: #f3f7d1;
+    color: #ffd428;
+} */
+.card-list  .card-link .card-title{
+    font-size: 1.19rem;
+    color: black;
+    font-weight: 500;
+}
+.card-list  .card-link .card-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    color: #5772f0;
+    border: 2px solid #5772f0;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 30px 0 5px;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list  .card-link:hover .card-button{
+    background: #5772f0;
+    color: white;
+}
+.swiper-slide-button{
+    opacity: 1;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+    .swiper-slide-button{
+        display: none;
+    }
+    
+}
